@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Page</title>
+  <link rel="stylesheet" href="/stylesheet/product.css">
+  <link rel="stylesheet" href="/stylesheet/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"
+    integrity="sha512-6+7rTBmR6pRFe9fa0vCFjFaHZj/XYa7774bEBzRtxgdpIJOS++R3cKd6Prg/eJmxtsJotd8KAg4g57uuVQsZKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"
+    integrity="sha512-d6sc8kbZEtA2LwB9m/ck0FhvyUwVfdmvTeyJRprmj7Wg9wRFtHDIpr6qk4g/y3Ix3O9I6KHIv6SGu9f7RaP1Gw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+  <section class="bodyMain">
+    <div id="cursor"></div>
+    <!-- <div class="pageLoader">
+      <div class="loaderGreet">નમસ્તે</div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div> -->
+
+
+    <header class="header">
+      <div class="header-inner">
+        <div class="LogoPart">
+          <p><b>Nayan</b> Sukhadiya</p>
+          <div class="rightPart">
+
+            <div class="hamburger"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="sideNavbar">
+        <div class="top">
+          <div class="cross"></div>
+        </div>
+        <p>NAVIGATION</p>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">About Me</a>
+          <a href="#">Contact me</a>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <img class="topBg" src="./assets/img/oQ65CY9Qk1W3v2c4ykiPXXB3og.png" alt="">
+    <section class="main">
+      <div class="hero-section">
+        <div class="content">
+          <div class="gsapHero">
+            <h4>Hi there my name is <span>Nayan Sukhadiya.</span>👋</h4>
+          </div>
+          <div class="gsapHero" class="smallTitle">
+            <p>It's great to meet a fellow Frontend Developer from India! 🇮🇳</p>
+          </div>
+        </div>
+        <div class="content content2">
+          <div class="gsapHero">
+            <p class="smallTitle">And i like to do Crafting Beautiful ✨ and Functional 💪 Web Experiences sounds like
+              you're passionate about creating amazing digital products. 💻</p>
+          </div>
+        </div>
+        <div class="contact-part-hero gsapHero">
+          <a href="#">Let's talk</a>
+          <div class="opr">
+            <div class="dot"></div>Open for opportunities
+          </div>
+        </div>
+      </div>
+      <div class="matter-container">
+        <div class="matter-canvas"></div>
+      </div>
+      <div class="portfolio">
+        <h1 class="section-title">Portfolio projects ✨</h1>
+        <p>Every project is like a new little story 📖.</p>
+        <p>unique starting points and tasks 🚀, but all with a happy end! 🎉🤩.</p>
+
+
+        <div class="project-section">
+
+          <div class="project-card" style="--color: #e5e5e5">
+            <div class="pin-pro">
+              Pinned 📌
+            </div>
+            <div class="img-section">
+              <img src="./assets/img/nextone.jpg">
+            </div>
+            <div class="detail">
+              <div class="status-div">
+                <div class="status main-pro">&#9679; Main</div>
+                <div class="status work-pro">&#9679; Working</div>
+              </div>
+              <h1>Infinity Music</h1>
+              <p>Music App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certification-section">
+        <h1 class="section-title">Courses and Master class</h1>
+        <div class="certification-card-section">
+        </div>
+      </div>
+
+      <div class="education">
+        <h1 class="section-title">Education</h1>
+        <div class="education-section">
+          <table cellspacing="0">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Program</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>% / CGPA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🎓</td>
+                <td>Bachelor of InformationTechnologyEngineering</td>
+                <td>Aditya College of Engineering, Gujarat</td>
+                <td>2022 - Current</td>
+                <td>8.66</td>
+              </tr>
+              <tr>
+                <td>🏫</td>
+                <td>XII(GSEB)</td>
+                <td>Sahjanand Vidhyalay</td>
+                <td>2022</td>
+                <td>56%</td>
+              </tr>
+              <tr>
+                <td>🏫</td>
+                <td>XI(GSEB)</td>
+                <td>Shree Chanakya Vidhya Sankul</td>
+                <td>2020</td>
+                <td>78%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 class="section-title">Extra-Curricular Activity</h1>
+        <ul>
+          <li>Participated in the 5 km run at the Gift City Run Marathon in February 2024.</li>
+          <li>Participated in the 5 km run at the Walk of Hope walkathon 2.0 at Sabarmati Riverfront in March 2024.</li>
+          <li>Involved in logo making competition under swachchh bharat abhiyan.</li>
+          <li>Participated in Space Quiz by the ISRO.</li>
+          <li>Honoured of the SCIENTIST FOR A DAY by NASA.</li>
+        </ul>
+
+      </div>
+
+
+    </section>
+  </section>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/gsap.js"></script>
+  <script src="./scripts/matter.js"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

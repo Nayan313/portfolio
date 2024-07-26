@@ -1,0 +1,142 @@
+.hero {
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+
+.hero .backhero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 70%;
+    object-fit: contain;
+}
+.Section-title{
+font-size: 35px;
+padding: 20px 0;
+}
+.device-design-info .detail .des {
+    margin-top: 15px;
+}
+.info-of-project{
+    grid-template-columns: repeat(10,1fr);
+}
+.card-title-info{
+    margin-bottom: 14px;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+}
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-card{
+    overflow: auto;
+    position: relative;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.deviceImg{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+.info-of-project .info-card{
+    height: 150px;
+}
+.grid-c-2{
+    grid-column: span  2;
+}
+.grid-c-3{
+    grid-column: span  3;
+}
+.grid-c-5{
+    grid-column: span  5;
+}
+.adaptive-card-section{
+    grid-template-columns: repeat(5,1fr);
+}
+.device-card{
+    height: auto;
+}
+.device-info-section {
+    position: relative; 
+}
+.device-design-info {
+    border-radius: 16px;
+    display: flex;
+    padding: 50px 0;
+    margin: 30px 0;
+    background-color: white;
+}
+.device-design-info:nth-child(odd){
+   flex-direction: row-reverse;
+}
+.device-design-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-design-info .img-section {
+    width: 30%;
+}
+
+.device-design-info .img-section img {
+    width: 60%;
+}
+
+.device-design-info .detail {
+    align-items: baseline;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 5%;
+}
+
+.device-design-info .detail .title {
+    background-image: linear-gradient(to right, #0011ff, #00aeff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 45px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .info-of-project,.adaptive-card-section{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-c-2,.grid-c-3,.grid-c-5{
+        grid-column: span  2;
+    }
+    .info-of-project .info-card {
+        min-height: 100px;
+        height: fit-content;
+    }
+    .grid-card{
+        padding: 10px 15px;}
+        .adaptive-card-section h6{
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .device-design-info{
+            flex-direction: column;
+        }
+        .device-design-info {
+            padding: 0%;
+        }
+        .device-design-info .img-section,.device-design-info .detail{
+            padding: 5%;
+            width: 90%;
+        }
+    }
